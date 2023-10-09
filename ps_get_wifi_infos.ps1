@@ -5,7 +5,7 @@
 
 $wifi_connection=$(netsh wlan show interfaces)
 
-$wifi_connection
+#$wifi_connection
 
 
 # ist aus MAC Router ablesbar?
@@ -42,7 +42,7 @@ $profile =$profile.Trim()
 $profile_content = & "C:\Windows\System32\netsh.exe"  wlan show profiles  name="$profile"  key=clear
 # im Debugger wird trotz key=clear KEIN passwort angezeigt. 
 
-$profile_content 
+#$profile_content 
 
 foreach ($profile_line in $profile_content) {
 $profile_line
