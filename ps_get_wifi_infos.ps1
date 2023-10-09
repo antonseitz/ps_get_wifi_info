@@ -22,7 +22,7 @@ $profile=($line -split ":",2)[1]
 
 }
 
-if($line.contains( "SSID" )){
+if($line.contains( " SSID" )){
 
 $ssid=($line -split ":",2)[1]
 }
@@ -55,5 +55,5 @@ $passwd=($profile_line -split ":",2)[1]
 
 
 
-"dd"
+"END"
 
