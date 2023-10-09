@@ -34,7 +34,7 @@ $ssid=($line -split ":",2)[1]
 "SSID:" + $ssid
 "Profile: " + $profile
 
-# WLAN Passwortl√§nge tracken
+# WLAN Passwortl‰nge tracken
 $profile =$profile.Trim()
 
 
@@ -45,7 +45,7 @@ $profile_content = & "C:\Windows\System32\netsh.exe"  wlan show profiles  name="
 #$profile_content 
 
 foreach ($profile_line in $profile_content) {
-$profile_line
+#$profile_line
 if($profile_line.contains( "inhalt" )){
 $passwd=($profile_line -split ":",2)[1]
 
@@ -55,6 +55,5 @@ $passwd=($profile_line -split ":",2)[1]
 
 
 
-
-
+"dd"
 
