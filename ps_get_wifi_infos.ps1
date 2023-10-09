@@ -46,7 +46,7 @@ $profile_content = & "C:\Windows\System32\netsh.exe"  wlan show profiles  name="
 
 foreach ($profile_line in $profile_content) {
 $profile_line
-if($profile_line.contains( "Schlüsselinhalt" )){
+if($profile_line.contains( "inhalt" )){
 $passwd=($profile_line -split ":",2)[1]
 
 }}
